@@ -1,0 +1,25 @@
+{
+  "name": "customer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Sequelize": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "purchases": {
+      "type": "hasMany",
+      "model": "purchase",
+      "foreignKey": ""
+    }
+  },
+  "acls": []
+}

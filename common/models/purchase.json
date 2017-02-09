@@ -1,0 +1,27 @@
+{
+  "name": "purchase",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Sequelize": true
+  },
+  "properties": {
+    "amount": {
+      "type": "number"
+    },
+    "item": {
+      "type": "string"
+    },
+    "customerId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+  },
+  "acls": [],
+  "methods": {}
+}
